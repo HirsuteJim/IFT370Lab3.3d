@@ -41,7 +41,7 @@ public class RestfulServiceClient
 
             HttpResponseMessage response = await client.GetAsync(myURI);
             response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
+            string responseBody = (await response.Content.ReadAsStringAsync()).ToString().Replace("\"","") ;
             // Above three lines can be replaced with new helper method below
             // string responseBody = await client.GetStringAsync(uri);
             // Console.WriteLine(responseBody);
