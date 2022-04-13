@@ -8,17 +8,26 @@ class Program {
 
         // var myEncryption = RestfulServiceClient.Encrypt(encryptThis).Result.ToString().Replace("\"","");
         // var myEncryption = RestfulServiceClient.Encrypt(encryptThis).Result.ToString();
-        var myEncryption = RestfulServiceClient.Encrypt(encryptThis).Result;
+    
+    
+    
+    
+    
+        // var myEncryption = RestfulServiceClient.Encrypt(encryptThis).Result;
 
-        Console.WriteLine($"When encrypted ... \"{encryptThis}\" becomes \"{myEncryption.ToString().Replace("\"","")}\"");
+        // Console.WriteLine($"When encrypted ... \"{encryptThis}\" becomes \"{myEncryption.ToString().Replace("\"","")}\"");
 
         Console.WriteLine();
 
         // var myDecrypted = RestfulServiceClient.Decrypt(myEncryption).Result.ToString().Replace("\"","");
         // var myDecrypted = RestfulServiceClient.Decrypt(myEncryption.Replace("\"","")).Result.ToString();
-        var myDecrypted = RestfulServiceClient.Decrypt(myEncryption.Replace("\"","")).Result;
+    
+    
+    
+    
+        // var myDecrypted = RestfulServiceClient.Decrypt(myEncryption.Replace("\"","")).Result;
 
-        Console.WriteLine($"When decrypted ... \"{myEncryption.ToString().Replace("\"","")}\" becomes \"{myDecrypted.ToString().Replace("\"","")}\"");
+        // Console.WriteLine($"When decrypted ... \"{myEncryption.ToString().Replace("\"","")}\" becomes \"{myDecrypted.ToString().Replace("\"","")}\"");
 
 
         Console.WriteLine("\n\nThis is the end of my output!!");
